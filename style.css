@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  
+}
+
+body {
+    background-image: url('imageAssets/BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.errorContainer img{
+    height: 25px;
+    width: 25px;
+   margin: 0px;
+   margin-left: 30px;
+}
+.container {
+    margin: 20vh;
+    display: flex;
+    background-color: white;
+    height: 600px;
+    max-width: 900px;
+    min-width: 900px;
+    border-radius: 10px;
+}
+
+form img {
+    height: 60px;
+    width: 75px;
+    margin-top: 15px;
+}
+
+form h1{
+    margin: 15px 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center; 
+    margin: 25px;
+}
+
+ input{
+    height: 50px;
+    width: 300px;
+    border: none;
+    background-color: #FAFCA2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 400;
+}
+input::placeholder{
+    color: #111E02;
+    opacity: 1;
+    font-weight: 500;
+
+}
+
+input:focus::placeholder {
+    transform: translateY(-15px);
+    font-size: 12px;
+    color: #111E02;
+    transition: transform 0.3s, font-size 0.3s, color 0.3s;
+    font-size: 10px;
+}
+
+button{
+    background-color: #FBEC5D;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.linkPages{
+    display: flex;
+}
+
+a{
+    color: #CDBC21;
+    text-decoration: none;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.fp{
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    font-size: 13px;
+    font-weight: 300;
+    color: #CDBC21;
+    text-decoration: none;
+    margin-left: 3px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+}
+
+.welcomeMessage{
+    background-image: url('imageAssets/sigupSidebg.png');
+    border-radius: 0px 10px 0px 0px;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.welcomeMessage h1{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.welcomeBackMessage{
+    background-image: url('imageAssets/LoginSidebg.png');
+    border-radius: 10px 0px 0px 10px;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.welcomeBackMessage h1{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.rememberMeForgot input{
+    height: 15px;
+    width: 15px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+
+}
+
+.rememberMeForgot{
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0px 50px 0px;
+}
+
+.rememberme{
+    display: flex;
+    margin-right: 70px;
+}
+
+input[type=checkbox] {
+    accent-color: #F6E545;
+ }
+
+.forgotPassword{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    height: 100%;
+    width: 100%;
+display: none;
+
+}
+
+.forgotpassContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 500px;
+    width: 430px;
+    padding: 60px;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+.forgotpassContainer img{
+    height: 60px;
+    width: 75px;
+}
+
+.forgotpassContainer h1{
+    margin: 20px 0px 20px 0px;
+}
+
+.forgotpassContainer p{
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.forgotpassContainer a{
+    text-decoration: underline;
+    margin-top: 3px;
+}
+
+
+
+.confirmation{
+    height: 600px;
+    width: 450px;
+    background-color: #F6E545;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    display: flex;
+}
+
+
+.confirmation h1{
+    margin: 20px 0px 20px 0px;
+    font-weight: 1000;
+}
+
+.confirmation button{
+    background-color: #111E02;
+    color: #F6E545;
+    margin-top: 20px;
+}
+
+.Success{
+    margin: 20vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.errorContainer{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFD6D6;
+    color: #FF0000;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.error{
+    display: block;
+}
+

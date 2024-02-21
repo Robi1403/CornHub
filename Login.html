@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imageAssets/CornHubLogo.png">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcomeBackMessage">
+            <h1>Welcome back! <br>We're thrilled to see you again.</h1>
+        </div>
+
+        <form onsubmit="login(event)">
+            <img src="imageAssets/CornHubLogo.png" alt="">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="Email">
+            <input type="password" placeholder="Password" id="Password">
+            <div class="rememberMeForgot">
+                <div class="rememberme">
+                    <input type="checkbox" id="rememberme">
+                    <p>Remember me</p>
+                </div>
+               
+                <button class="fp" id="forgotPassWord" onclick="forgotPassword()">Forgot Password?</button>
+            </div>
+            <div class="error" id="error">
+            </div>
+            <button id="LoginBtn">Login</button>
+            <div class="linkPages">
+                <p>Dont have an Account?</p>
+                <a href="SignUp.html">Sign up</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="forgotPassword" id="forgotPassId">
+
+        <div class="forgotPass" id="ForgotpassPrompt">
+            <div class="forgotpassContainer">
+                <img src="imageAssets/CornHubLogo.png" alt="">
+                <h1>Forgot Password</h1>
+                <p>Enter your account email, and we'll send an authentication code for password reset. </p>
+                <input type="email" placeholder="Email" id="emailFP">
+                <button onclick="submitted()">Submit</button>
+            </div>
+        </div>
+
+
+        <div class="confirmation" id="sent">
+            <img src="imageAssets/check.png" alt="">
+            <h1>Sent</h1>
+            <p>We have sent you link to change your password</p>
+            <button onclick="backTologin()">Back to Login</button>
+        </div>
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
